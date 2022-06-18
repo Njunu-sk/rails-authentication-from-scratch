@@ -7,3 +7,9 @@
 - This is solved with the `reset_session`, this issues a new session identifier and declares the old one invalid after a successful login.
 
 - This is demonstrated in the `Authentication` module: login and logout methods both have `reset_session`.
+
+## User Management 
+- User passwords must be stored only as cryptographic hash.
+- This is given in Rails with the `has_secure_password`, which supports secure password hashing, confirmation and recovery mechanism.
+
+- This is included in our `User` model along side `bcrypt gem`.
