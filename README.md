@@ -13,3 +13,19 @@
 - This is given in Rails with the `has_secure_password`, which supports secure password hashing, confirmation and recovery mechanism.
 
 - This is included in our `User` model along side `bcrypt gem`.
+
+## Brute force Attack 
+- Accounts on the trial and error attack on the login page 
+
+- The best solution to this is to display a generic error message or require to enter a CAPTCHA
+
+## Account Hijacking 
+
+### Passwords 
+- In scenarios where hacker has is about to reset a user password after session fixation, provide attacker with a field to type current password.
+
+- This makes it more difficult for the attackers.
+
+### Email 
+- Require user to enter a password when changing an email
+
