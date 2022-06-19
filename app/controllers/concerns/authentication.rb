@@ -26,18 +26,8 @@ module Authentication #:nodoc:
     redirect_to login_path, alert: "You need to login to access that page." unless user_signed_in?
   end
 
-  def forget(user)
-    cookies.delete :remember_token
-    user.regenerate_remember_token
-  end
-
   def forget_active_session
     cookies.delete :remember_token
-  end
-
-  def remember(user)
-    user.regenerate_remember_token
-    cookies.permanent.encrypted[:remember_token] = user.remember_token
   end
 
   def remember(active_session)
