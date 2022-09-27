@@ -22,7 +22,7 @@
 ## Account Hijacking 
 
 ### Passwords 
-- In scenarios where hacker has is about to reset a user password after session fixation, provide attacker with a field to type current password.
+- In scenarios where hacker is about to reset a user password after session fixation, provide attacker with a field to type current password.
 
 - This makes it more difficult for the attackers.
 
